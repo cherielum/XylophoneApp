@@ -19,7 +19,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     @IBAction func notePressed(_ sender: UIButton) {
         
         //subtract one because array starts at 0. therefore note1 can be 0.
-        
+        //ie. send.tag = 1-1, 2-1, 3-1, etc
+        // soundArray [0,1,2,3,4,etc]
         selectedSoundFileName = soundArray[sender.tag - 1]
         
         print(selectedSoundFileName)
